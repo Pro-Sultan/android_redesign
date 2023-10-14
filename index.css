@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #202124;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+header,
+nav ul,
+div.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  padding: 20px 200px;
+  fill: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+header a.android {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+div.search img.search {
+  margin-right: 30px;
+  width: 17px;
+}
+
+div.search button.shop,
+.text_but {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  background-color: #202124;
+  border-radius: 25px;
+  color: white;
+}
+
+.text_but {
+  background-color: white;
+  margin-top: 30px;
+  color: black;
+  outline: none;
+  font-weight: 600;
+  border: none;
+}
+
+div.home {
+  padding: 0px 200px;
+  width: 100%;
+}
+
+div.background {
+  background-image: url(./images/desk.png);
+  background-repeat: no-repeat;
+  height: 82vh;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  justify-content: space-between;
+}
+
+div.image img {
+  margin-left: -300px;
+  margin-top: 80px;
+}
+
+div.text h1 {
+  color: white;
+  font-size: 55px;
+  width: 320px;
+}
+
+div.last {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.last img {
+  width: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 20px 50px;
+  }
+  div.home {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  nav ul li {
+    display: none;
+  }
+  header {
+    padding: 20px 5px;
+  }
+  div.home {
+    padding: 0px 5px;
+    height: 90vh;
+  }
+  div.background {
+    display: block;
+    padding: 20px 0px;
+    text-align: center;
+    align-items: center;
+  }
+
+  div.background {
+    height: 90vh;
+  }
+
+  div.image img {
+    margin-left: 0px;
+    margin-top: 00px;
+  }
+
+  div.text h1 {
+    color: white;
+    font-size: 55px;
+    width: 100%;
+  }
+
+  .text_but {
+    background-color: white;
+    margin-top: 30px;
+    color: black;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    margin: 30px auto;
+
+    display: block;
+  }
+}
